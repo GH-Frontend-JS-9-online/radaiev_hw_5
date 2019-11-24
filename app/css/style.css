@@ -772,14 +772,13 @@ a {
 
 .services_inner {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .services_item {
   max-width: 270px;
   padding: 0px 10px;
-  margin: 0 auto;
-  width: calc(33.33% - 30px);
+  width: 100%;
 }
 
 .services_item_title {
@@ -807,8 +806,12 @@ a {
 }
 
 @media (max-width: 768px) {
+  .services_inner {
+    flex-wrap: wrap;
+  }
   .services_item {
     width: 50%;
+    margin: 0 auto;
   }
 }
 

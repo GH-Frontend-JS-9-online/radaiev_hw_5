@@ -402,14 +402,13 @@ a {
 
 	&_inner {
 		display: flex;
-		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	&_item {
 		max-width: 270px;
 		padding: 0px 10px;
-		margin:0 auto;
-		width: calc(33.33% - 30px);
+		width: 100%;
 		&_title{
 			margin-bottom: 22px;
 			>h3 {
@@ -436,8 +435,13 @@ a {
 }
 
 @media (max-width: 768px) {
+	.services_inner {
+		flex-wrap: wrap;
+	}
+
 	.services_item {
 		width: 50%;
+		margin:0 auto;
 	}
 }
 
