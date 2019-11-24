@@ -39,7 +39,14 @@ $('.burger').click(function() {
 
 $('.burger').click(function() {
 	$('.header_mobile').slideToggle(600);
-	$('.header_top').toggleClass('header_mobile_fixed');
+
+		if(window.pageYOffset < 75) {
+		$('.header_top').toggleClass('header_mobile_fixed');
+	} else {
+		$('.header_top').remove('header_mobile_fixed');
+	}
+
+	//$('.header_top').toggleClass('header_mobile_fixed');
 });
 
 $('.header_mobile_menu_link').click(function(event) {
