@@ -38,21 +38,20 @@ $('.burger').click(function() {
 });
 
 $('.burger').click(function() {
-	$('.header_mobile').slideToggle(600);
-
-		if(window.pageYOffset < 75) {
-		$('.header_top').toggleClass('header_mobile_fixed');
-	} else {
-		$('.header_top').remove('header_mobile_fixed');
-	}
-
-	//$('.header_top').toggleClass('header_mobile_fixed');
+	$('.header_mobile').slideToggle(600);	
+	$('.header_top').toggleClass('header_mobile_fixed');
 });
 
 $('.header_mobile_menu_link').click(function(event) {
 	$('.header_mobile').slideToggle(600);
-		$('.burger span:nth-child(1)').toggleClass('first');
+	$('.burger span:nth-child(1)').toggleClass('first');
 	$('.burger span:nth-child(2)').toggleClass('second');
 	$('.burger span:nth-child(3)').toggleClass('third');
 	$('.burger span:nth-child(4)').toggleClass('fourth');
 });
+
+
+
+	
+
+
